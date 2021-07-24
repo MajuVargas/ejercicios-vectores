@@ -1,0 +1,23 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+int main ()
+{
+int vectorEntero [100], n, mayor =0;
+cout << "ingrese numero de elementos";
+cin >> n;
+for (int i =0; i < n; n++)
+{
+    cout << "digite el elemento: " <<i+1;
+    cin >> vectorEntero[i];
+
+    if (vectorEntero[i] > mayor)
+    {
+        mayor = vectorEntero [i];
+    }
+}
+cout << "el mayor elemento es: \n" << mayor; 
+
+    getch ();
+    return 0;
+}
